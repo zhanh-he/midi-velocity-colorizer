@@ -17,7 +17,7 @@ This repo provides supplementary materials for our paper:
 - [WandB workspace](https://wandb.ai/zhanh-uwa/2025_cmmr?nw=nwuserzhanh)
 - [WandB report](https://api.wandb.ai/links/zhanh-uwa/wpzvcb76)
   - This report includes quantitative results (Tables 2 and 3 in the paper).
-  - This report includes a hyperparameter search not included in the paper.
+  - This report includes a hyperparameter search exploration not included in the paper.
 - The code will be further cleaned and finalized if the paper is accepted.
   - A Google Colab notebook in progress to help users process MIDI files without local code running environment.
 
