@@ -1,0 +1,53 @@
+exp: # Experiment Parameters
+  group_name: "${exp.dataset}-chl${matrix.n_channels}" 
+  type: AE                  # Option: AE, VAE
+  dataset: MAESTRO             # Option: MAESTRO, ASAP
+  test_dataset: SMD
+  composers: All  # Option: All, Common, [Bach], [Bach,Beethoven], ...
+  uncommon_threshold: 0.1   # Occupy <10% in dataset are uncommon composers, the rest are "Common"
+  use_default_valid: True   # Use default train-valid split (MAESTRO dataset has, ASAP dataset has not)
+  custom_valid_ratio: 0.2   # Use new train-valid split (its ratio), must use with Common composers (some composers only 1 works, not suitbale for custom split)
+
+  random_seed: 13
+  batch_size: 1  
+  num_workers: 12        # 8 in laptop or double run
+  devices: [0]
+  
+  epochs: 1             # max training to 120 epochs
+  testing_only: False
+  load_data: True         # whether load existing data
+  onset_mask: True        # apply onset_mask on the input or not
+
+
+flat:
+  velo_value: 64
+
+
+matrix:
+  resolution: 96        # Time Resolution: 12, 24, 48, 96, 200, 400, 800 - the width of matrix
+  seg_time: 10        # in seconds if seg_type==fix_time
+  bins: 88              # Pitch Bins: MIDI 128 keys + 3 pedals (OLD), Piano 88 keys (NEW), not using pedals informations
+  n_channels: 2         # n channels of matrix. onset roll + frame roll (perfmidi: velocity, musicxml: voice) If=1 then only use the frame channel
+  save_dir: "../dataset/Processed_${exp.dataset}/${exp.composers}"
+  save_folder: "res${matrix.resolution}-${matrix.seg_time}"
+
+
+dataset:
+  ASAP:
+    dataset_dir: ../../dataset/asap-dataset-midi/
+    metadata_file: ../..dataset/asap-dataset-midi/metadata-v1.3.csv
+  MAESTRO:
+    dataset_dir: ../../dataset/maestro-v3-midi/
+    metadata_file: ../../dataset/maestro-v3-midi/maestro-v3.0.0.csv
+  SMD:
+    dataset_dir: ../../dataset/SMD-midi/
+
+
+defaults:
+  - _self_  
+
+
+hydra:  
+  output_subdir: null  
+  run:  
+    dir: .

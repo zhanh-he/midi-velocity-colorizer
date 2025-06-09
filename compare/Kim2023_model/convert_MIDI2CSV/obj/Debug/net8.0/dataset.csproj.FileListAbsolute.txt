@@ -1,0 +1,66 @@
+/mnt/d/ipynb/vae/dataset/obj/Debug/net8.0/dataset.csproj.AssemblyReference.cache
+/mnt/d/ipynb/vae/dataset/obj/Debug/net8.0/dataset.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/d/ipynb/vae/dataset/obj/Debug/net8.0/dataset.AssemblyInfoInputs.cache
+/mnt/d/ipynb/vae/dataset/obj/Debug/net8.0/dataset.AssemblyInfo.cs
+/mnt/d/ipynb/vae/dataset/obj/Debug/net8.0/dataset.csproj.CoreCompileInputs.cache
+/mnt/d/ipynb/vae/dataset/bin/Debug/net8.0/dataset
+/mnt/d/ipynb/vae/dataset/bin/Debug/net8.0/dataset.deps.json
+/mnt/d/ipynb/vae/dataset/bin/Debug/net8.0/dataset.runtimeconfig.json
+/mnt/d/ipynb/vae/dataset/bin/Debug/net8.0/dataset.dll
+/mnt/d/ipynb/vae/dataset/bin/Debug/net8.0/dataset.pdb
+/mnt/d/ipynb/vae/dataset/bin/Debug/net8.0/NAudio.dll
+/mnt/d/ipynb/vae/dataset/bin/Debug/net8.0/NAudio.Asio.dll
+/mnt/d/ipynb/vae/dataset/bin/Debug/net8.0/NAudio.Core.dll
+/mnt/d/ipynb/vae/dataset/bin/Debug/net8.0/NAudio.Midi.dll
+/mnt/d/ipynb/vae/dataset/bin/Debug/net8.0/NAudio.Wasapi.dll
+/mnt/d/ipynb/vae/dataset/bin/Debug/net8.0/NAudio.WinMM.dll
+/mnt/d/ipynb/vae/dataset/obj/Debug/net8.0/dataset.csproj.Up2Date
+/mnt/d/ipynb/vae/dataset/obj/Debug/net8.0/dataset.dll
+/mnt/d/ipynb/vae/dataset/obj/Debug/net8.0/refint/dataset.dll
+/mnt/d/ipynb/vae/dataset/obj/Debug/net8.0/dataset.pdb
+/mnt/d/ipynb/vae/dataset/obj/Debug/net8.0/dataset.genruntimeconfig.cache
+/mnt/d/ipynb/vae/dataset/obj/Debug/net8.0/ref/dataset.dll
+/mnt/d/ipynb/vae/Kim/convert MIDI to CSV (dotnet)/bin/Debug/net8.0/dataset
+/mnt/d/ipynb/vae/Kim/convert MIDI to CSV (dotnet)/bin/Debug/net8.0/dataset.deps.json
+/mnt/d/ipynb/vae/Kim/convert MIDI to CSV (dotnet)/bin/Debug/net8.0/dataset.runtimeconfig.json
+/mnt/d/ipynb/vae/Kim/convert MIDI to CSV (dotnet)/bin/Debug/net8.0/dataset.dll
+/mnt/d/ipynb/vae/Kim/convert MIDI to CSV (dotnet)/bin/Debug/net8.0/dataset.pdb
+/mnt/d/ipynb/vae/Kim/convert MIDI to CSV (dotnet)/bin/Debug/net8.0/NAudio.dll
+/mnt/d/ipynb/vae/Kim/convert MIDI to CSV (dotnet)/bin/Debug/net8.0/NAudio.Asio.dll
+/mnt/d/ipynb/vae/Kim/convert MIDI to CSV (dotnet)/bin/Debug/net8.0/NAudio.Core.dll
+/mnt/d/ipynb/vae/Kim/convert MIDI to CSV (dotnet)/bin/Debug/net8.0/NAudio.Midi.dll
+/mnt/d/ipynb/vae/Kim/convert MIDI to CSV (dotnet)/bin/Debug/net8.0/NAudio.Wasapi.dll
+/mnt/d/ipynb/vae/Kim/convert MIDI to CSV (dotnet)/bin/Debug/net8.0/NAudio.WinMM.dll
+/mnt/d/ipynb/vae/Kim/convert MIDI to CSV (dotnet)/obj/Debug/net8.0/dataset.csproj.AssemblyReference.cache
+/mnt/d/ipynb/vae/Kim/convert MIDI to CSV (dotnet)/obj/Debug/net8.0/dataset.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/d/ipynb/vae/Kim/convert MIDI to CSV (dotnet)/obj/Debug/net8.0/dataset.AssemblyInfoInputs.cache
+/mnt/d/ipynb/vae/Kim/convert MIDI to CSV (dotnet)/obj/Debug/net8.0/dataset.AssemblyInfo.cs
+/mnt/d/ipynb/vae/Kim/convert MIDI to CSV (dotnet)/obj/Debug/net8.0/dataset.csproj.CoreCompileInputs.cache
+/mnt/d/ipynb/vae/Kim/convert MIDI to CSV (dotnet)/obj/Debug/net8.0/dataset.csproj.Up2Date
+/mnt/d/ipynb/vae/Kim/convert MIDI to CSV (dotnet)/obj/Debug/net8.0/dataset.dll
+/mnt/d/ipynb/vae/Kim/convert MIDI to CSV (dotnet)/obj/Debug/net8.0/refint/dataset.dll
+/mnt/d/ipynb/vae/Kim/convert MIDI to CSV (dotnet)/obj/Debug/net8.0/dataset.pdb
+/mnt/d/ipynb/vae/Kim/convert MIDI to CSV (dotnet)/obj/Debug/net8.0/dataset.genruntimeconfig.cache
+/mnt/d/ipynb/vae/Kim/convert MIDI to CSV (dotnet)/obj/Debug/net8.0/ref/dataset.dll
+/mnt/d/ipynb/vae/Kim/convert_MIDI2CSV/bin/Debug/net8.0/dataset
+/mnt/d/ipynb/vae/Kim/convert_MIDI2CSV/bin/Debug/net8.0/dataset.deps.json
+/mnt/d/ipynb/vae/Kim/convert_MIDI2CSV/bin/Debug/net8.0/dataset.runtimeconfig.json
+/mnt/d/ipynb/vae/Kim/convert_MIDI2CSV/bin/Debug/net8.0/dataset.dll
+/mnt/d/ipynb/vae/Kim/convert_MIDI2CSV/bin/Debug/net8.0/dataset.pdb
+/mnt/d/ipynb/vae/Kim/convert_MIDI2CSV/bin/Debug/net8.0/NAudio.dll
+/mnt/d/ipynb/vae/Kim/convert_MIDI2CSV/bin/Debug/net8.0/NAudio.Asio.dll
+/mnt/d/ipynb/vae/Kim/convert_MIDI2CSV/bin/Debug/net8.0/NAudio.Core.dll
+/mnt/d/ipynb/vae/Kim/convert_MIDI2CSV/bin/Debug/net8.0/NAudio.Midi.dll
+/mnt/d/ipynb/vae/Kim/convert_MIDI2CSV/bin/Debug/net8.0/NAudio.Wasapi.dll
+/mnt/d/ipynb/vae/Kim/convert_MIDI2CSV/bin/Debug/net8.0/NAudio.WinMM.dll
+/mnt/d/ipynb/vae/Kim/convert_MIDI2CSV/obj/Debug/net8.0/dataset.csproj.AssemblyReference.cache
+/mnt/d/ipynb/vae/Kim/convert_MIDI2CSV/obj/Debug/net8.0/dataset.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/d/ipynb/vae/Kim/convert_MIDI2CSV/obj/Debug/net8.0/dataset.AssemblyInfoInputs.cache
+/mnt/d/ipynb/vae/Kim/convert_MIDI2CSV/obj/Debug/net8.0/dataset.AssemblyInfo.cs
+/mnt/d/ipynb/vae/Kim/convert_MIDI2CSV/obj/Debug/net8.0/dataset.csproj.CoreCompileInputs.cache
+/mnt/d/ipynb/vae/Kim/convert_MIDI2CSV/obj/Debug/net8.0/dataset.csproj.Up2Date
+/mnt/d/ipynb/vae/Kim/convert_MIDI2CSV/obj/Debug/net8.0/dataset.dll
+/mnt/d/ipynb/vae/Kim/convert_MIDI2CSV/obj/Debug/net8.0/refint/dataset.dll
+/mnt/d/ipynb/vae/Kim/convert_MIDI2CSV/obj/Debug/net8.0/dataset.pdb
+/mnt/d/ipynb/vae/Kim/convert_MIDI2CSV/obj/Debug/net8.0/dataset.genruntimeconfig.cache
+/mnt/d/ipynb/vae/Kim/convert_MIDI2CSV/obj/Debug/net8.0/ref/dataset.dll

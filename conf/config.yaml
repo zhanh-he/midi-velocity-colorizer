@@ -1,0 +1,146 @@
+exp:
+  group_name: "2025_ismir" 
+  exp_name: "${exp.test_dataset}-${ae.model}-t${matrix.seg_time}-${ae.ablation}${ae.attn_window}-${loss.type} ${loss.mask} ${loss.weight} cosim${loss.cosim}-${exp.test_ckpt}"     
+  dataset: MAESTRO          # MAESTRO | Not report: ASAP
+  test_dataset: MAESTRO     # SMD, MAESTRO | Not report: ASAP
+  random_seed: 13
+  batch_size: 3          # 3 at default
+  num_workers: 16        # 8 in laptop or double run
+  devices: [0]
+  
+  epochs: 300            # max training to 400 epochs
+  es_patience: 300       # early stopping patience
+  es_threshold: 0.005    # early stopping threshold
+  save_k_ckpt: 3         # default: keep top 3 models checkpoints
+  save_n_eps: 5          # default: save model every 60 epochs (i.e., skip saving for fast train)
+  test_n_eps: 5          # default: run the testing at every 5 epochs
+  save_ckpt_dir: "results/checkpoints/${exp.exp_name}"
+
+  load_data: True         # whether load existing data
+  training_restore: False # load model for training restore
+  load_ckpt_path: results/checkpoints/AE-All-t10-res88-UNet-boundary-element_wise-BCELoss-cosim0.2-kaiming-bat4/last.ckpt    # load model from "..../last.ckpt"
+  
+  testing_only: False     # load model for testing only
+  test_ckpt_dir:          # results/checkpoints/AE-All-t10-res88-UNet-boundary-element_wise-BCELoss-cosim0.2-kaiming-bat4
+  test_ckpt: ""           # "epoch=96", "epoch=104", "last"
+
+  init_type: xavier       # no_init, kaiming, xavier, uniform initialization
+  onset_mask: True        # Only ConvAE 2021 literature set to False, as they are using "frame" as input
+
+  # Not used in this experiment
+  composers: All             # Option: All, Common, [Bach], [Bach,Bartok,Beethoven,Brahms,Chopin,Haydn,Liszt,Mozart,Rachmaninoff,Ravel], ...
+  uncommon_threshold: 0.01   # Occupy <1% in dataset are uncommon composers, the rest are "Common"
+  use_default_valid: True    # Use default train-valid split (MAESTRO dataset has, ASAP dataset has not)
+  custom_valid_ratio: 0.02   # Use new train-valid split (its ratio), must use with Common composers (some composers only 1 works, not suitbale for custom split)
+
+
+loss:
+  weight: u_shape        # u_shape, inv_u_shape, boundary, none
+  mask: element_wise      # matrix_wise, element_wise, none (else)
+  type: BCELoss           # MSELoss BCELoss
+  cosim: 0.2
+
+
+opt:
+  optimizer: "Ranger"       # Options: Adam, Ranger
+  scheduler: "Exponential"  # Options: Warmup, Exponential, ReduceLROnPlateau
+  lr: 1e-5
+
+  # WarmupLR scheduler
+  lr_init: 1e-6
+  lr_end: 0.0
+  warmup_epochs: 10       # Number of epochs for the warmup phase 
+
+  # Exponential scheduler
+  lr_gamma: 0.1           # Factor multiply with LR for exponential reduction
+  
+  # ReduceLROnPlateau
+  lr_factor: 0.5          # Factor multiply with LR in ReduceLROnPlateau
+  lr_patience: 5          # Number of epochs with no improvement for ReduceLROnPlateau before reducing LR
+  
+
+interface:
+  segment_a_midi: False
+  segment_a_folder: False
+  process_a_midi: False
+  process_a_folder: False
+  
+  input_midi_path: # "SMD-listen/Human_before/0_Bach_BWV849-02_36_41.mid"  
+  input_midi_dir:  # "SMD-listen/Human_before"
+  output_midi_dir: # "SMD-listen/Human"
+
+  compare_three_MIDI: False
+  compare_midi_dir: ""
+  compare_midi_files:
+    - '0_Bach_BWV849-02_36_41.mid'
+    - '0_Beetoven_Op031No2-01_26_31.mid'
+    - '0_Chopin_Op010-04_1_4.mid'
+    - '1_Haydn_Hob017No4_7_12.mid'
+    - '1_Mozart_KV265_355_405.mid'
+    - '1_Rachman_OP036-02_96_101.mid'
+    - '2_Bartok_SZ080-03_102_107.mid'
+    - '2_Ravel_JeuxDEau_22_27.mid'
+  
+  plot_a_midi: False
+  plot_a_folder: False
+  top_n: 10
+
+  plot_a_npy: False
+  plot_a_npy_ver2: False
+  segment_id: 8
+
+  plot_velocity_comparison: False
+  plot_velocity_pitch_density_map: False
+
+  velo_range: [20, 110] # [20,90] # [0, 127]
+  pitch_range: [21,108] # [53, 81] # [21, 108]
+  velo_window_size: 25
+  ma_window_size: 5
+
+  process_a_npy: False
+  return_attention: False
+  input_npy_path: ""
+  output_npy_path: ""
+  output_npy_dir: ""
+
+flat:
+  velo_value: 64
+
+ae:
+  model: UNet                 # Formal option: UNet, ConvAE | Trial option: Conv2016, ResNet18T|F, ResNet20T|F, ...
+  channels: [16, 32, 64, 96]  # '', [8, 16, 32, 64]
+  activation: 'Sigmoid'       # '', Sigmoid, ReLU
+  ablation: "attn"            # attn, no_attn, no_skip
+  attn_window: ""             # 1, 2, 4, 8 | e.g., 8 for 8x8 window
+
+matrix:
+  resolution: 96        # Total time frames (determine the resolution): 12, 24, 48, 100, 200, 400, 800
+  seg_time: 10          # in seconds
+  bins: 88              # Pitch Bins: MIDI 128 keys + 3 pedals (OLD), Piano 88 keys (NEW), not using pedals informations
+  n_channels: 2         # n channels of matrix. onset roll + frame roll (perfmidi: velocity, musicxml: voice) If=1 then only use the frame channel
+  save_dir: "dataset/Processed_${exp.dataset}/${exp.composers}"
+  save_folder: "res${matrix.resolution}-${matrix.seg_time}"
+
+dataset: 
+  ASAP:
+    dataset_dir: ./dataset/asap-dataset-midi/
+    metadata_file: ./dataset/asap-dataset-midi/metadata-v1.3.csv
+  MAESTRO:
+    dataset_dir: ./dataset/maestro-v3-midi/
+    metadata_file: ./dataset/maestro-v3-midi/maestro-v3.0.0.csv
+  SMD:
+    dataset_dir: ./dataset/SMD-midi/
+    metadata_file: ./dataset/SMD-midi/metadata_smd.csv
+
+
+# HYDRA
+defaults:  
+  - _self_  
+  # - override hydra/hydra_logging: disabled  
+  # - override hydra/job_logging: disabled  
+
+
+hydra:  
+  output_subdir: null  
+  run:  
+    dir: .
