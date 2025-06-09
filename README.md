@@ -1,33 +1,33 @@
 # midi-velocity-colorizer
 PyTorch implementation for filling MIDI velocities from given MIDI notes. The model is an U-Net image colorizor &amp; trained on expert piano performances from the Piano-e-Competition (MAESTRO dataset).
 
-This repository contains the official implementation and supplementary materials for our submitted paper:
+This repository provides supplementary materials for our paper:
 **"MIDI Velocity Prediction using U-Net Image Colorizer"** 
-
-> 🔬 This repository includes training scripts, evaluation notebooks, and subjective audio demos—generated using colorized MIDI rendered with PianoTeq 8. For details, see the “Subjective Evaluation” section of our paper.
 
 ---
 
-## 📁 Contents
+## 📁 Code Contents
 - `train.py` — model training entry point
-- `evaluation.ipynb` — reproduce Tables 2 & 3 (quantitative results)
-- `interface.ipynb` — visualize Figures 1–4 (interface & outputs)
-- `subjective_test_audio.tar` — listening test audio samples
+- `evaluation.ipynb` — reproduce Tables 2 & 3 quantitative results in our paper
+- `interface.ipynb` — colorize & visualize the midi; reproduce Figures 1–4 in our paper
+- `subjective_test_audio.tar` — listening test audio samples, generated using our colorized MIDI via PianoTeq 8. For details, see "Section 5.2" of our paper.
 - `compare/` — reference models: Flat and Kim2023's Seq2Seq model.
 
-## Additional Notes
+## 📝 Additional Materials
+- Paper: current folder
 - WandB workspace: https://wandb.ai/zhanh-uwa/2025_cmmr?nw=nwuserzhanh
 - WandB report: https://api.wandb.ai/links/zhanh-uwa/wpzvcb76
   - This report includes quantitative results (Tables 2 and 3) and a hyperparameter search not included in the main paper.
-- The code will be cleaned and finalized if the paper is accepted.
+- The code will be further cleaned and finalized if the paper is accepted.
+  - A Google Colab notebook in progress to help users process MIDI files without local code running environment.
 
 ---
 
 ## 0. Hyperparameter Setup
 
 All training settings are defined in `conf/config.yaml`.  
-Some data filtering operations were implemented but not used in our experiments.
-To reproduce exact results, please refer to the training logs and parameter tracking in our WandB workspace (see link in Additional Notes).
+- Some data filtering operations were implemented but not used in our experiments.
+- To reproduce our results, please refer to the training logs and parameter tracking in our WandB workspace.
 
 ---
 
