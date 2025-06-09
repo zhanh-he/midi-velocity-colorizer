@@ -8,8 +8,10 @@ This repository provides supplementary materials for our paper:
 - `train.py` — model training entry point
 - `evaluation.ipynb` — reproduce Tables 2 & 3 quantitative results in our paper
 - `interface.ipynb` — colorize & visualize the midi; reproduce Figures 1–4 in our paper
-- `subjective_test_audio.tar` — listening test audio samples, generated using our colorized MIDI via PianoTeq 8. For details, see "Section 5.2" of our paper.
-- `compare/` — reference models: Flat and Kim2023's Seq2Seq model.
+- `results/` - directory for model, outputs and audio demos
+  - [checkpoints.zip](https://drive.google.com/file/d/13ejPI7U-Dhlnt0h_WSkwrWyR146TjJzl/view?usp=drive_link) download and extract here to interface with our trained model
+  - [subjective_test_audio.tar](https://drive.google.com/file/d/1rLeCHIGh3iARHRpAPhsfFeIvudK3XuYZ/view?usp=sharing) listening test samples generated from our colorized MIDI using PianoTeq 8 (see Section 5.2 of the paper)
+- `compare/` — reference models: Flat and Kim2023's Seq2Seq.
 
 ## 📝 Additional Materials
 - Paper: current folder
