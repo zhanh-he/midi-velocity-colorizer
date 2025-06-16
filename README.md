@@ -14,7 +14,7 @@ This repo provides supplementary materials for our paper:
 - `compare/` — reference models: Flat and Kim2023's Seq2Seq.
 
 ## 📝 Additional Materials
-- WandB workspace: https://wandb.ai/zhanh-uwa/2025_cmmr?nw=nwuser`your_wandb_username`
+- [WandB workspace](https://wandb.ai/zhanh-uwa/2025_cmmr) (public available, but need login wandB first)
 - [WandB report](https://api.wandb.ai/links/zhanh-uwa/wpzvcb76)
   - This report includes quantitative results (Tables 2 and 3 in the paper).
   - This report includes a hyperparameter search exploration not included in the paper.
