@@ -2,7 +2,7 @@
 PyTorch implementation for filling MIDI velocities from given MIDI notes. The model is an U-Net image colorizor &amp; trained on expert piano performances from the Piano-e-Competition (MAESTRO dataset).
 
 This repo provides supplementary materials for our paper:
-**"MIDI Velocity Prediction using U-Net Image Colorizer"** 
+**"MIDI Velocity Prediction using U-Net Image Colorizer"** submitted to CMMR2025.
 
 ## 📁 Code Contents
 - `train.py` — model training entry point
