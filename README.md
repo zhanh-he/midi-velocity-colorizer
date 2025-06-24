@@ -15,7 +15,7 @@ This repo provides supplementary materials for our paper:
 - `results/` - directory for model, outputs and audio demos
   - [checkpoints.zip](https://drive.google.com/file/d/13ejPI7U-Dhlnt0h_WSkwrWyR146TjJzl/view?usp=drive_link) download and extract here to interface with our trained model
   - [subjective_test_audio.rar](https://drive.google.com/file/d/1rLeCHIGh3iARHRpAPhsfFeIvudK3XuYZ/view?usp=sharing) listening test samples generated from our colorized MIDI using PianoTeq 8 (see Section 5.2 of the paper)
-- `compare/` — Flat model and [Kim2023's Seq2Seq]((https://github.com/sappho192/midi-velocity-infer-v2/)) model.
+- `compare/` — Flat model and [Kim2023's Seq2Seq](https://github.com/sappho192/midi-velocity-infer-v2/) model.
 
 ## 📝 Additional Materials
 - [WandB workspace](https://wandb.ai/zhanh-uwa/2025_cmmr) (public available, but need login wandB first)
