@@ -6,7 +6,6 @@ PyTorch implementation for filling MIDI velocities from given MIDI notes. The mo
 This repo provides supplementary materials for our paper:
 **"Filling MIDI Velocity using U-Net Image Colorizer"** submitted to CMMR2025.
 
-The code will be further cleaned and finalized.
 - A Google Colab notebook in progress to help users without code environment. You can upload your MIDI then download it with MIDI velocity filled, instead of local running our `interface,ipynb`.
 
 ## 📁 Code Contents
