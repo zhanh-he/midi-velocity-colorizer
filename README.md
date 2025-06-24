@@ -15,7 +15,7 @@ The code will be further cleaned and finalized.
 - `interface.ipynb` — colorize & visualize the midi; reproduce Figures 1–4 in our paper
 - `results/` - directory for model, outputs and audio demos
   - [checkpoints.zip](https://drive.google.com/file/d/13ejPI7U-Dhlnt0h_WSkwrWyR146TjJzl/view?usp=drive_link) download and extract here to interface with our trained model
-  - [subjective_test_audio.tar](https://drive.google.com/file/d/1rLeCHIGh3iARHRpAPhsfFeIvudK3XuYZ/view?usp=sharing) listening test samples generated from our colorized MIDI using PianoTeq 8 (see Section 5.2 of the paper)
+  - [subjective_test_audio.rar](https://drive.google.com/file/d/1rLeCHIGh3iARHRpAPhsfFeIvudK3XuYZ/view?usp=sharing) listening test samples generated from our colorized MIDI using PianoTeq 8 (see Section 5.2 of the paper)
 - `compare/` — Flat model and [Kim2023's Seq2Seq]((https://github.com/sappho192/midi-velocity-infer-v2/)).
 
 ## 📝 Additional Materials
@@ -94,7 +94,7 @@ For other models' results in Tables 2&3:
 
 ## 6. Interface & Demo (Figures 1–4)
 
-Use `interface.ipynb` to visualize results or interact with trained models, you will obtain the MIDI file with velocities filled in accordingaly (make sure you have our checkpoints ready).
+Use `interface.ipynb` to process & visualise the MIDI with our trained models, you will obtain the MIDI file accordingly. Following are example from [Human, ConvAE, UNet], find more examples in our `interface.ipynb`, and demos in `subjective_test_audio.rar`.
 
 <img src="images/p4.png" alt="Example of model results" width="96%">
 
