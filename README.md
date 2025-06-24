@@ -2,7 +2,7 @@
 PyTorch implementation for filling MIDI velocities from given MIDI notes. The model is an U-Net image colorizor &amp; trained on expert piano performances from the Piano-e-Competition (MAESTRO dataset).
 
 This repo provides supplementary materials for our paper:
-**"MIDI Velocity Prediction using U-Net Image Colorizer"** submitted to CMMR2025.
+**"Filling MIDI Velocity using U-Net Image Colorizer"** submitted to CMMR2025.
 
 ## 📁 Code Contents
 - `train.py` — model training entry point
@@ -81,11 +81,11 @@ python train.py exp.test_dataset="MAESTRO" matrix.seg_time=10 ae.model="UNet" ae
 
 ## 5. Evaluate the Model (Tables 2 & 3)
 
-Use `evaluation.ipynb` to reproduce the quantitative results using saved checkpoints in `results/checkpoints`.
+Use `evaluation.ipynb` to reproduce our results, please download & unzip our model `checkpoints.zip` to `results/checkpoints` folder.
 
-- For reference models:
+For other models' results in Tables 2&3:
   - Flat model: `compare/Flat_model/flat_evaluation.ipynb`
-  - Kim2023 Seq2Seq model: `compare/Kim2023_model/seq2seq_evalaution.ipynb`
+  - [Kim2023 Seq2Seq model](https://github.com/sappho192/midi-velocity-infer-v2/): `compare/Kim2023_model/seq2seq_evalaution.ipynb`
 
  
 
