@@ -16,7 +16,7 @@ The code will be further cleaned and finalized.
 - `results/` - directory for model, outputs and audio demos
   - [checkpoints.zip](https://drive.google.com/file/d/13ejPI7U-Dhlnt0h_WSkwrWyR146TjJzl/view?usp=drive_link) download and extract here to interface with our trained model
   - [subjective_test_audio.tar](https://drive.google.com/file/d/1rLeCHIGh3iARHRpAPhsfFeIvudK3XuYZ/view?usp=sharing) listening test samples generated from our colorized MIDI using PianoTeq 8 (see Section 5.2 of the paper)
-- `compare/` — reference models: Flat and Kim2023's Seq2Seq.
+- `compare/` — Flat model and [Kim2023's Seq2Seq]((https://github.com/sappho192/midi-velocity-infer-v2/)).
 
 ## 📝 Additional Materials
 - [WandB workspace](https://wandb.ai/zhanh-uwa/2025_cmmr) (public available, but need login wandB first)
@@ -88,7 +88,7 @@ Use `evaluation.ipynb` to reproduce our results, please download & unzip our mod
 
 For other models' results in Tables 2&3:
   - Flat model: `compare/Flat_model/flat_evaluation.ipynb`
-  - [Kim2023 Seq2Seq model](https://github.com/sappho192/midi-velocity-infer-v2/): `compare/Kim2023_model/seq2seq_evalaution.ipynb`
+  - Kim2023 Seq2Seq model: `compare/Kim2023_model/seq2seq_evalaution.ipynb`
 
  
 
