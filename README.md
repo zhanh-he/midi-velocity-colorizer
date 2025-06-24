@@ -1,8 +1,16 @@
 # midi-velocity-colorizer
-PyTorch implementation for filling MIDI velocities from given MIDI notes. The model is an U-Net image colorizor &amp; trained on expert piano performances from the Piano-e-Competition (MAESTRO dataset).
+PyTorch implementation for filling MIDI velocities from given MIDI notes. The model is an U-Net image colorizor &amp; trained on expert piano performances from the Piano-e-Competition (MAESTRO dataset). It can work on all instrumental MIDI, but best expressiveness on piano (will train with other instruments in future).
 
-This repo provides supplementary materials for our paper:
+<div align="center">
+  <img src="images/p1.png" alt="topic" width="48%">
+  <img src="images/p2.png" alt="model" width="48%">
+</div>
+
+NOTE: This repo provides supplementary materials for our paper:
 **"Filling MIDI Velocity using U-Net Image Colorizer"** submitted to CMMR2025.
+
+The code will be further cleaned and finalized.
+- A Google Colab notebook in progress to help users without code environment. You can upload your MIDI then download it with MIDI velocity filled, instead of local running our `interface,ipynb`.
 
 ## 📁 Code Contents
 - `train.py` — model training entry point
@@ -16,10 +24,8 @@ This repo provides supplementary materials for our paper:
 ## 📝 Additional Materials
 - [WandB workspace](https://wandb.ai/zhanh-uwa/2025_cmmr) (public available, but need login wandB first)
 - [WandB report](https://api.wandb.ai/links/zhanh-uwa/wpzvcb76)
-  - This report includes quantitative results (Tables 2 and 3 in the paper).
-  - This report includes a hyperparameter search exploration not included in the paper.
-- The code will be further cleaned and finalized if the paper is accepted.
-  - A Google Colab notebook in progress to help users process MIDI files without local code running environment.
+  - This wandb report includes quantitative results, refer to Tables 2 & 3 in the paper.
+  - This wandb report includes hyperparameter search **not included in the paper**.
 
 ## 0. Hyperparameter Setup
 
