@@ -8,6 +8,14 @@ This repo provides supplementary materials for our paper:
 
 - A Google Colab notebook in progress to help users without code environment. You can upload your MIDI then download it with MIDI velocity filled, instead of local running our `interface,ipynb`.
 
+
+## 📝 Additional Materials
+- [WandB workspace](https://wandb.ai/zhanh-uwa/2025_cmmr) (public available, but need login wandB first)
+- [WandB report](https://api.wandb.ai/links/zhanh-uwa/wpzvcb76)
+  - This wandb report includes quantitative results, refer to Tables 2 & 3 in the paper.
+  - This wandb report includes hyperparameter search **not included in the paper**.
+
+
 ## 📁 Code Contents
 - `train.py` — model training entry point
 - `evaluation.ipynb` — reproduce Tables 2 & 3 quantitative results in our paper
@@ -16,12 +24,7 @@ This repo provides supplementary materials for our paper:
   - [checkpoints.zip](https://drive.google.com/file/d/13ejPI7U-Dhlnt0h_WSkwrWyR146TjJzl/view?usp=drive_link) download and extract here to interface with our trained model
   - [subjective_test_audio.rar](https://drive.google.com/file/d/1rLeCHIGh3iARHRpAPhsfFeIvudK3XuYZ/view?usp=sharing) listening test samples generated from our colorized MIDI using PianoTeq 8 (see Section 5.2 of the paper)
 - `compare/` — Flat model and [Kim2023's Seq2Seq](https://github.com/sappho192/midi-velocity-infer-v2/) model.
-
-## 📝 Additional Materials
-- [WandB workspace](https://wandb.ai/zhanh-uwa/2025_cmmr) (public available, but need login wandB first)
-- [WandB report](https://api.wandb.ai/links/zhanh-uwa/wpzvcb76)
-  - This wandb report includes quantitative results, refer to Tables 2 & 3 in the paper.
-  - This wandb report includes hyperparameter search **not included in the paper**.
+  
 
 ## 0. Hyperparameter Setup
 
