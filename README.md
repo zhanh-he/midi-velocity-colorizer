@@ -94,7 +94,7 @@ For other models' results in Tables 2&3:
 
  
 
-## 6. Interface & Demo (Figures 1–4)
+## 6. Interface & Demo (Figure 4)
 
 Use `interface.ipynb` to process & visualise the MIDI with our trained models, you will obtain the MIDI file accordingly. Following are example from [Human, ConvAE, UNet], find more examples in our `interface.ipynb`, and demos in `subjective_test_audio.rar`.
 
