@@ -70,7 +70,7 @@ If preferred, you can switch to TensorBoard by modifying `train.py`.
 
  
 
-## 4. Train the Model
+## 4. Train the Model (optional)
 
 Edit training options in `conf/config.yaml`. Then run:
 
@@ -86,7 +86,7 @@ python train.py exp.test_dataset="MAESTRO" matrix.seg_time=10 ae.model="UNet" ae
 
 ## 5. Evaluate the Model (Tables 2 & 3)
 
-Use `evaluation.ipynb` to reproduce our results, please download & unzip our model `checkpoints.zip` to `results/checkpoints` folder.
+Use `evaluation.ipynb` to reproduce our results. You can skip the training via download & unzip our pretrain model [checkpoints.zip](https://drive.google.com/file/d/13ejPI7U-Dhlnt0h_WSkwrWyR146TjJzl/view?usp=drive_link) to `results/checkpoints` folder.
 
 For other models' results in Tables 2&3:
   - Flat model: `compare/Flat_model/flat_evaluation.ipynb`
@@ -96,7 +96,7 @@ For other models' results in Tables 2&3:
 
 ## 6. Interface & Demo (Figure 4)
 
-Use `interface.ipynb` to process & visualise the MIDI with our trained models, you will obtain the MIDI file accordingly. Following are example from [Human, ConvAE, UNet], find more examples in our `interface.ipynb`, and demos in `subjective_test_audio.rar`.
+Use `interface.ipynb` to process & visualise the MIDI with our trained models, you will obtain the MIDI file accordingly. You can skip the training, directly use our pretrain [checkpoints.zip](https://drive.google.com/file/d/13ejPI7U-Dhlnt0h_WSkwrWyR146TjJzl/view?usp=drive_link) as Step 5. Following are interface example from [Human, ConvAE, UNet], find more examples in our `interface.ipynb`, and demos in `subjective_test_audio.rar`.
 
 <img src="images/p4.png" alt="Example of model results" width="96%">
 
