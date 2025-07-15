@@ -99,7 +99,7 @@ Use `interface.ipynb` to fill the MIDI (without velocity), you will visualise & 
 <img src="images/p4.png" alt="Example of model results" width="96%">
 
 ## License
-`midi-velocity-colorizer` is Copyright 2025 Dolby.
+Copyright 2025 Dolby.
 The code and checkpoints are released for academic and non-commercial use only.
 [Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/)
 
