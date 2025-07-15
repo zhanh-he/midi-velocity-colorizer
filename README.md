@@ -98,5 +98,5 @@ Use `interface.ipynb` to fill the MIDI (without velocity), you will visualise & 
 
 <img src="images/p4.png" alt="Example of model results" width="96%">
 
-
- 
+## License
+Pretrain Model: CC BY - No Commercial 4.0
