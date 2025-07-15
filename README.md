@@ -96,7 +96,7 @@ For other models' results in Tables 2&3:
 
 ## 6. Interface & Demo (Figure 4)
 
-Use `interface.ipynb` to process & visualise the MIDI with our trained models, you will obtain the MIDI file accordingly. You can skip the training, directly use our pretrain [checkpoints.zip](https://drive.google.com/file/d/13ejPI7U-Dhlnt0h_WSkwrWyR146TjJzl/view?usp=drive_link) as Step 5. Following are interface example from [Human, ConvAE, UNet], find more examples in our `interface.ipynb`, and demos in `subjective_test_audio.rar`.
+Use `interface.ipynb` to fill the MIDI (without velocity), you will visualise & obtain the MIDI (w. velocity filled) accordingly. You can skip the training, directly use our pretrain model [checkpoints.zip](https://drive.google.com/file/d/13ejPI7U-Dhlnt0h_WSkwrWyR146TjJzl/view?usp=drive_link) as Step 5. Following are MIDI example from [Human] and [ConvAE, UNet]'s results, find more example in our `interface.ipynb`, and audio demos in `subjective_test_audio.rar`.
 
 <img src="images/p4.png" alt="Example of model results" width="96%">
 
