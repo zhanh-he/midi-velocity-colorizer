@@ -4,14 +4,14 @@ PyTorch implementation for filling MIDI velocities from given MIDI notes. The mo
 <img src="images/p2.png" alt="Diagram of U-Net Architecture" width="60%">
 
 This repo provides supplementary materials for our paper:
-**"Filling MIDI Velocity using U-Net Image Colorizer"** submitted to CMMR2025.
+[**"Filling MIDI Velocity using U-Net Image Colorizer"**](https://www.arxiv.org/abs/2508.07751) in [CMMR2025](https://aro.org/event/17th-international-symposium-on-computer-music-multidisciplinary-research-cmmr-2025/).
 
 
 ## 📝 Additional Materials
 - [WandB workspace](https://wandb.ai/zhanh-uwa/2025_cmmr) (public available, but need login wandB first)
 - [WandB report](https://api.wandb.ai/links/zhanh-uwa/wpzvcb76)
   - This wandb report includes quantitative results, refer to Tables 2 & 3 in the paper.
-  - This wandb report includes hyperparameter search **not included in the paper**.
+  - This wandb report includes hyperparameter search **not detailed in the paper** (to save spaces).
 
 
 ## 📁 Code Contents
