@@ -3,18 +3,17 @@ PyTorch implementation for filling MIDI velocities from given MIDI notes. The mo
 
 <img src="images/p2.png" alt="Diagram of U-Net Architecture" width="60%">
 
-This repo provides supplementary materials for our paper:
-[**"Filling MIDI Velocity using U-Net Image Colorizer"**](https://www.arxiv.org/abs/2508.07751) in [CMMR2025](https://aro.org/event/17th-international-symposium-on-computer-music-multidisciplinary-research-cmmr-2025/).
+This repo correspond to our paper: [**"Filling MIDI Velocity using U-Net Image Colorizer"**](https://www.arxiv.org/abs/2508.07751) in [CMMR2025](https://aro.org/event/17th-international-symposium-on-computer-music-multidisciplinary-research-cmmr-2025/).
 
 
-## 📝 Additional Materials
+## Additional Materials
 - [WandB workspace](https://wandb.ai/zhanh-uwa/2025_cmmr) (public available, but need login wandB first)
 - [WandB report](https://api.wandb.ai/links/zhanh-uwa/wpzvcb76)
   - This wandb report includes quantitative results, refer to Tables 2 & 3 in the paper.
   - This wandb report includes hyperparameter search **not detailed in the paper** (to save spaces).
 
 
-## 📁 Code Contents
+## Code Contents
 - `train.py` — model training entry point
 - `evaluation.ipynb` — reproduce Tables 2 & 3 quantitative results in our paper
 - `interface.ipynb` — colorize & visualize the midi; reproduce Figures 1–4 in our paper
@@ -98,7 +97,18 @@ Use `interface.ipynb` to fill the MIDI (without velocity), you will visualise & 
 
 <img src="images/p4.png" alt="Example of model results" width="96%">
 
-## License
+## Citation and License
+```bibtex
+@inproceedings{he2025filling,
+    author = {Zhanhong He and David Cooper and Defeng Huang and Roberto Togneri},
+    title = {Filling MIDI Velocity using U-Net Image Colorizer},
+    year = {2025},
+    month = nov,
+    booktitle = {Proceedings of the 17th International Symposium on Computer Music Multidisciplinary Research},
+    address = {London, United Kingdom},
+    pages = {949-960}
+}
+```
 Copyright 2025 Dolby.
 The code and checkpoints are released for academic and non-commercial use only.
 [Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/)
