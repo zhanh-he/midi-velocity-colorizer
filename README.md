@@ -1,5 +1,5 @@
 # midi-velocity-colorizer
-This repo correspond to our CMMR2025 paper: Filling MIDI Velocity using U-Net Image Colorizer[[PDF]](https://www.arxiv.org/abs/2508.07751). An PyTorch implementation for filling MIDI velocities from given MIDI notes. The model is an U-Net image colorizor &amp; trained on expert performances from the Piano-e-Competition (MAESTRO dataset). It can work on all instrumental MIDI, but best expressiveness on piano (train other instruments in future).
+Refer to our paper: Filling MIDI Velocity using U-Net Image Colorizer [[PDF]](https://www.arxiv.org/abs/2508.07751) in CMMR 2025. PyTorch implementation for filling MIDI velocities from given MIDI notes. The model is an U-Net image colorizor &amp; trained on expert performances from the Piano-e-Competition (MAESTRO dataset). It can work on all instrumental MIDI, but best expressiveness on piano (train other instruments in future).
 
 <img src="images/p2.png" alt="Diagram of U-Net Architecture" width="60%">
 
